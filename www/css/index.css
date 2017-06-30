@@ -158,6 +158,10 @@ h3{
     display: flex;
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 
 #popularNow {
     height: 110px;
@@ -318,6 +322,42 @@ h3{
     overflow-x: hidden;
     display: none;
 }
+
+
+.card {
+    height: 200px;
+    background: white;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,0.1);
+    background-size: 100% 149px;
+    background-image: url(https://eevents.s3.amazonaws.com/images/og/concert.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+.cardBottom>div {
+    padding: 8px;
+    color: rebeccapurple;
+    font-size: 20px;
+}
+
+.cardBottom {
+    position: relative;
+    top: 155px;
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 12px;
+}
+
+
+.card.full{
+    flex: 0 0 100%;
+}
+
+.card.half {
+    flex: 0 0 48%;
+    margin-right: 2%;
+}
+
 
 
 
