@@ -8,6 +8,7 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
          <link rel="stylesheet" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/group.css" />
         
         <title>Broup</title>
     </head>
@@ -125,7 +126,7 @@
 			
             <section section-name="myGroups" class="page get-scroll">
                   <div class="nice-scroll">
-                            <div class="groupCard" style="background-image:url(demo/img/grupos/friends.jpg)">
+                            <div class="groupCard" style="background-image:url(demo/img/grupos/friends.jpg)" section-target="group">
                                 <div class="bottomGroupBar">
                                     <div class="groupName">Grupo 1</div>
 										<div class="fa fa-user usersAmount">10</div>
@@ -134,7 +135,7 @@
                                 </div>
                             </div>
 
-                            <div class="groupCard" style="background-image:url(demo/img/grupos/girl_friends.jpg);">
+                            <div class="groupCard" style="background-image:url(demo/img/grupos/girl_friends.jpg);" section-target="group">
                                 <div class="bottomGroupBar" style="background-color: rgb(112,173,71);">
                                     <div class="groupName">Grupo 2</div>
 										<div class="fa fa-user usersAmount">&nbsp;10</div>
@@ -144,7 +145,7 @@
                             </div>
 
 
-                            <div class="groupCard" style="background-image:url(demo/img/grupos/beach_friends.jpg);">
+                            <div class="groupCard" style="background-image:url(demo/img/grupos/beach_friends.jpg);" section-target="group">
                                 <div class="bottomGroupBar" style="background-color: rgb(68,114,196);">
                                     <div class="groupName">Grupo 3</div>
 										<div class="fa fa-user usersAmount">10</div>
@@ -153,7 +154,7 @@
                                 </div>
                             </div>
 
-                            <div class="groupCard" style="background-image:url(demo/img/grupos/movies_friends.jpg);">
+                            <div class="groupCard" style="background-image:url(demo/img/grupos/movies_friends.jpg);" section-target="group">
                                 <div class="bottomGroupBar" style="background-color: rgb(237,125,49);">
                                     <div class="groupName">Grupo 4</div>
 										<div class="fa fa-user usersAmount">10</div>
@@ -162,7 +163,7 @@
                                 </div>
                             </div>
 
-                            <div class="groupCard" style="background-image:url(demo/img/grupos/bar_friends.jpg);">
+                            <div class="groupCard" style="background-image:url(demo/img/grupos/bar_friends.jpg);" section-target="group">
                                 <div class="bottomGroupBar" style="background-color:rgb(255,192,0);">
                                     <div class="groupName">Grupo 5</div>
 										<div class="fa fa-user usersAmount">10</div>
@@ -172,7 +173,7 @@
                             </div>
 
                             
-                            <div class="groupCard" style="background-image:url(demo/img/grupos/selfie_friends.jpg);">
+                            <div class="groupCard" style="background-image:url(demo/img/grupos/selfie_friends.jpg);" section-target="group">
                                 <div class="bottomGroupBar" style="background-color: rgb(112,173,40);">
 										<div class="groupName">Grupo 6</div>
 										<div class="fa fa-user usersAmount">10</div>
@@ -363,6 +364,30 @@
                             Salidas Futuras
                         </div>
             </section>
+			
+			<!-- Group Page -->
+
+			
+			<section section-name="group" class="page groupPage">
+				<div id="groupTitle"><div class="groupTitle_back fa fa-arrow-left" section-target="myGroups" section-title="Mis Grupos"></div>
+					
+					<div class="groupTiltle_bar">
+					<div id="groupTitle_name">Groupo 1</div>
+					<div class="fa fa-btc broupPoints"> 2,000</div>
+				</div>
+				</div>
+
+				<nav id="groupNav">
+											<ul class="tablist" tab-group="bookin">
+					<li tab-target="history" class="">Votación</li>
+					<li class="active" tab-target="resource">Chat</li>
+					<li tab-target="history" class="">Salidas</li>
+				</ul>
+										</nav>
+				<div class="get-scroll">
+					<div class="nice-scroll"></div>
+				</div>
+			</section>
 
             <div id="menuBtn" class="btn fa fa-bars"></div>       <!-- Menu Button -->
 			<div id="searchBtn" class="btn fa fa-search"></div>   <!-- Search Button -->
@@ -375,7 +400,11 @@
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="js/generics.js"></script>
         <script type="text/javascript" src="js/menu.js"></script>
-        <script type="text/javascript" src="js/search-activities.js"></script>
+        <!--pages -->
+		<script type="text/javascript" src="js/pages/myGroups.js"></script>
+		<script type="text/javascript" src="js/pages/group.js"></script>
+		<script type="text/javascript" src="js/search-activities.js"></script>
+		
         
         <script type="text/javascript">
 

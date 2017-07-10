@@ -5,6 +5,7 @@ $("#menuBtn").tapend(function(ev){
         $("#myMeetsBtn").animate({"margin-right" : "-150px", "margin-top" : "46px"})
         $("#myAccountBtn").animate({"margin-left" : "-150px", "margin-bottom" : "46px"})
         $("#activitiesBtn").animate({"margin-left" : "-150px", "margin-top" : "46px"})
+		$(".btn.fa.fa-bars").css({ "background-color" :"rebeccapurple"})
 
     }
 })
@@ -20,8 +21,11 @@ $("#mainMenu").tapend(function(ev){
 })
 
 $(document).on("tapend","[section-target]",function(ev){
-	console.log(eval(this))
+
 		if(checkPress(ev)){
+			 setTimeout(function() {
+				$(".get-scroll").getNiceScroll().resize()
+			}, 300); 
 			var title = $(this).hasAttr("section-title") ? $(this).attr("section-title") : $(this).text();
 			$(".page").removeClass("active");
 			$("header").html(title);
@@ -33,9 +37,7 @@ $(document).on("tapend","[section-target]",function(ev){
 		}else if(eval('typeof '+$(this).attr("section-target")+'.init == "function"')){
 			eval($(this).attr("section-target")+".init(this"+($(this).hasAttr("section-fx-parameters")?","+ $(this).attr("section-fx-parameters") : "")+")")
 		}
-       setTimeout(function() {
-            $(".get-scroll").getNiceScroll().resize()
-       }, 500); 
+      
 	}
 	
 });

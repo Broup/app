@@ -241,6 +241,24 @@ function normalDate(date){
 
 Number.prototype.thousand =  function () { return this.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); }
 
+function addStylesheetRule (rule) {
+  var styleEl = document.createElement('style'),
+      styleSheet;
+
+  // Append style element to head
+  document.head.appendChild(styleEl);
+
+  // Grab style sheet
+  styleSheet = styleEl.sheet;
+
+
+
+    // Insert CSS Rule
+	var l =  styleSheet.cssRules.length
+    styleSheet.insertRule(rule,l);
+	return l
+}
+
 if($ != undefined){
 	$.fn.hasAttr = function(name) {  
 		return this.attr(name) !== undefined;

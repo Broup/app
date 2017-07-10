@@ -1,0 +1,48 @@
+.groupPage {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #f0f0f0;
+    display: none; 
+	padding: 0px;
+}
+
+.groupPage.active{
+	display: block
+}
+
+#groupTitle {
+    height: 150px;
+    background-image: url(../demo/img/grupos/friends.jpg);
+    background-size: 100%;
+    border-bottom: 4px solid rebeccapurple;
+}
+
+
+.groupTitle_back {
+    padding: 15px;
+    font-size: 20px;
+    text-shadow: 2px 1px 7px rgba(152, 150, 150, 0.79);
+}
+
+.broupPoints {
+    padding: 13px;
+    font-weight: 900;
+    margin-left: 10px;
+}
+
+.groupTiltle_bar {
+    height: 40px;
+    background: rgba(150,150,150,0.6);
+    position: relative;
+    top: 60px;
+    display: flex;
+    line-height: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
